@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavor</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="sign-up.css">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800&family=Cinzel:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <section class="container-fluid parent">
+       <div class="d-flex flex-sm-column flex-md-row flex-wrap justify-content-md-center">
+         <div class="baner one me-lg-5 me-md-5">
+            <span class="image"><i class="icon fa-regular fa-envelope"></i></span>
+            <h1 class="my-5 title">Upload your info!</h1>
+            <p class="my-5 subtitle">We will halp you any time</p>
+            <button type="button"class="btn btn-outline-dark return"><a href="index.html">Return Home</a></button>
+         </div>
+         <div class="baner two mt-sm-2">
+            <form>
+               <div class="form-group">
+                  <label class="label-control col-2" for="name">Name: </label>
+                  <div class="col-10">
+                    <input id="name" class="form-control" type="text">
+                  </div>  
+               </div>
+               <div class="form-group">
+                  <label class="label-control col-2" for="surname">Surname: </label>
+                  <div class="col-10">  
+                     <input id="surname" class="form-control" type="text">
+                  </div>   
+               </div>
+               <div class="form-group">
+                  <label class="label-control col-2" for="email">Email: </label>
+                  <div class="col-10">
+                     <input id="email" class="form-control" type="email">
+                  </div>   
+               </div>
+               <div class="form-group">
+                  <label class="label-control col-2" for="comment">Comment: </label>
+                  <div class="col-10">
+                      <textarea class="form-control" id="comment" row="4"></textarea> 
+                  </div>     
+               </div>
+               <div class="form-group mt-2">        
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn sendbutton">Submit</button>
+                </div>
+              </div>  
+            </form>
+         </div>
+       </div>  
+    </section>
+    <script>
+      const button = document.querySelector(".return");
+      const link = document.querySelector(".return a");
+
+      button.addEventListener("click",function(){
+         link.click();
+      })
+    </script>
+</body>
+</html>
